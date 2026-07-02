@@ -48,6 +48,10 @@ For 2-d synthetic data, use the following command:
 python main.py -a True -e 50 -c 0.8 -m gauss -s 1 -r 0.99 -t 0
 ```
 
+**Output metrics**
+- `MSE_ptb`: perturbation error before reconstruction.
+- `MSE_rec`: reconstruction error after applying ρ-Rec.
+- `RG`: reconstruction gain, computed as `1 - MSE_rec / MSE_ptb`.
 
 ### 2. downstream task
 
